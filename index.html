@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>NCST</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1 id="title">NCST Media Team Application</h1>
+    <p id="description">Apply for volunteering in NCST's media team.</p>
+
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name
+          <input type="text" id="name" placeholder="Enter your name" required>
+        </label>
+
+        <label id="email-label" for="email">Email
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </label>
+
+        <label id="number-label" for="number">Experience in media:
+          <input min="1" max="2" type="number" id="number" placeholder="How much experience do you have with media?" required>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="dropdown">What position you want to apply for?
+          <select id="dropdown">
+            <option value="">Select one</option>
+            <option value="1">Photographer</option>
+            <option value="2">Videographer</option>
+            <option value="3">Graphic designer</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Grade:</legend>
+        <label for="Grade-10">
+          <input id="Grade-10" name="grade" type="radio" value="10" checked /> Grade 10
+        </label>
+
+        <label for="Grade-11">
+          <input id="Grade-11" name="grade" type="radio" value="11" /> Grade 11
+        </label>
+        
+        <label for="Grade-12">
+          <input id="Grade-12" name="grade" type="radio" value="12" /> Grade 12
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Terms and Availability:</legend>
+        
+        <label for="terms">
+          <input type="checkbox" id="terms" value="agree-terms"> I agree to NCST rules
+        </label>
+
+        <label for="availability">
+          <input type="checkbox" id="availability" value="available-weekends"> I am available on weekends
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Tell us more about yourself..."></textarea>
+      </fieldset>
+
+      <input type="submit" id="submit" value="Submit">
+    </form>
+  </body>
+</html>
